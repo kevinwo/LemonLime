@@ -11,6 +11,11 @@
 		26BD37831BF5DE280048D2F4 /* LemonLime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BD37781BF5DE280048D2F4 /* LemonLime.framework */; };
 		26BD37881BF5DE280048D2F4 /* LemonLimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD37871BF5DE280048D2F4 /* LemonLimeTests.swift */; };
 		26BD37931BF5DFE10048D2F4 /* LLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD37921BF5DFE10048D2F4 /* LLExtensions.swift */; };
+		26BD37991BF5E11A0048D2F4 /* LLLabelImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD37951BF5E11A0048D2F4 /* LLLabelImageNode.swift */; };
+		26BD379A1BF5E11A0048D2F4 /* LLSpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD37971BF5E11A0048D2F4 /* LLSpriteNode.swift */; };
+		26BD379B1BF5E11A0048D2F4 /* LLTimerBarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD37981BF5E11A0048D2F4 /* LLTimerBarNode.swift */; };
+		26BD379D1BF5E16A0048D2F4 /* LLLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD379C1BF5E16A0048D2F4 /* LLLabelNode.swift */; };
+		26BD37A01BF5E27A0048D2F4 /* LLScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD379F1BF5E27A0048D2F4 /* LLScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +36,11 @@
 		26BD37871BF5DE280048D2F4 /* LemonLimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonLimeTests.swift; sourceTree = "<group>"; };
 		26BD37891BF5DE280048D2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26BD37921BF5DFE10048D2F4 /* LLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLExtensions.swift; sourceTree = "<group>"; };
+		26BD37951BF5E11A0048D2F4 /* LLLabelImageNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLabelImageNode.swift; sourceTree = "<group>"; };
+		26BD37971BF5E11A0048D2F4 /* LLSpriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLSpriteNode.swift; sourceTree = "<group>"; };
+		26BD37981BF5E11A0048D2F4 /* LLTimerBarNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLTimerBarNode.swift; sourceTree = "<group>"; };
+		26BD379C1BF5E16A0048D2F4 /* LLLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLLabelNode.swift; sourceTree = "<group>"; };
+		26BD379F1BF5E27A0048D2F4 /* LLScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,8 @@
 			children = (
 				26BD377B1BF5DE280048D2F4 /* LemonLime.h */,
 				26BD37921BF5DFE10048D2F4 /* LLExtensions.swift */,
+				26BD37941BF5E11A0048D2F4 /* Nodes */,
+				26BD379E1BF5E26D0048D2F4 /* Scenes */,
 				26BD377D1BF5DE280048D2F4 /* Info.plist */,
 			);
 			path = LemonLime;
@@ -87,6 +99,33 @@
 				26BD37891BF5DE280048D2F4 /* Info.plist */,
 			);
 			path = LemonLimeTests;
+			sourceTree = "<group>";
+		};
+		26BD37941BF5E11A0048D2F4 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				26BD37951BF5E11A0048D2F4 /* LLLabelImageNode.swift */,
+				26BD379C1BF5E16A0048D2F4 /* LLLabelNode.swift */,
+				26BD37961BF5E11A0048D2F4 /* Sprites */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		26BD37961BF5E11A0048D2F4 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				26BD37971BF5E11A0048D2F4 /* LLSpriteNode.swift */,
+				26BD37981BF5E11A0048D2F4 /* LLTimerBarNode.swift */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
+		26BD379E1BF5E26D0048D2F4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				26BD379F1BF5E27A0048D2F4 /* LLScene.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +236,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BD379A1BF5E11A0048D2F4 /* LLSpriteNode.swift in Sources */,
+				26BD37A01BF5E27A0048D2F4 /* LLScene.swift in Sources */,
+				26BD379B1BF5E11A0048D2F4 /* LLTimerBarNode.swift in Sources */,
+				26BD37991BF5E11A0048D2F4 /* LLLabelImageNode.swift in Sources */,
+				26BD379D1BF5E16A0048D2F4 /* LLLabelNode.swift in Sources */,
 				26BD37931BF5DFE10048D2F4 /* LLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
