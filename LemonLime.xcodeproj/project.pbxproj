@@ -10,6 +10,7 @@
 		26BD377C1BF5DE280048D2F4 /* LemonLime.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BD377B1BF5DE280048D2F4 /* LemonLime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26BD37831BF5DE280048D2F4 /* LemonLime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BD37781BF5DE280048D2F4 /* LemonLime.framework */; };
 		26BD37881BF5DE280048D2F4 /* LemonLimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD37871BF5DE280048D2F4 /* LemonLimeTests.swift */; };
+		26BD37931BF5DFE10048D2F4 /* LLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD37921BF5DFE10048D2F4 /* LLExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		26BD37821BF5DE280048D2F4 /* LemonLimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LemonLimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BD37871BF5DE280048D2F4 /* LemonLimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonLimeTests.swift; sourceTree = "<group>"; };
 		26BD37891BF5DE280048D2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26BD37921BF5DFE10048D2F4 /* LLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				26BD377B1BF5DE280048D2F4 /* LemonLime.h */,
+				26BD37921BF5DFE10048D2F4 /* LLExtensions.swift */,
 				26BD377D1BF5DE280048D2F4 /* Info.plist */,
 			);
 			path = LemonLime;
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26BD37931BF5DFE10048D2F4 /* LLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 		26BD378D1BF5DE280048D2F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinwolkober.LemonLime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		26BD378E1BF5DE280048D2F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
